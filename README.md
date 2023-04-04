@@ -1,4 +1,5 @@
 Workflow
+
 The required libraries are imported and the dataset is loaded into a pandas dataframe.
 The comment_text column is assigned to the X variable and the target labels are assigned to the y variable.
 The TextVectorization layer is used to preprocess the text data.
@@ -12,6 +13,7 @@ The function is integrated into a Gradio interface that allows users to enter a 
 The output of the interface is an image of the bar chart showing the category probabilities.
 
 Data Preprocessing
+
 Read in the CSV file containing the dataset using pandas.
 Assign the 'comment_text' column from the dataframe (df) to X, and the target labels (all columns from index 2 to the end) to y. This separates the input text and the corresponding labels for classification.
 Initialize a TextVectorization layer, adapt it to the data, and vectorize the input text.
@@ -20,12 +22,14 @@ Initialize the TextVectorization layer again, adapt it to the data, and set the 
 Shuffle, batch, and prefetch the dataset.
 
 Model Building and Training
+
 Build a Sequential model with an Embedding layer, a Bidirectional LSTM layer, and several dense layers.
 Compile the model with the BinaryCrossentropy loss function and Adam optimizer.
 Train the model on the training set and evaluate it on the validation set.
 Load the trained model.
 
 Prediction and Visualization
+
 Define a function to predict toxicity labels for an input comment, vectorize the comment, get predictions, and format the results as a string.
 Define another function to predict toxicity labels and return a bar chart of category probabilities.
 Define an interface using the gradio library, allowing users to input a comment, choose a toxicity category, and input a custom phrase or word.
