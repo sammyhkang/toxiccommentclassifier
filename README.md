@@ -1,4 +1,4 @@
-Link to model: https://drive.google.com/file/d/1vbBWxGgiQ6xGHjGG4StVFZqPwVrLAjkr/view?usp=share_link
+Link to model weights: https://drive.google.com/file/d/1vbBWxGgiQ6xGHjGG4StVFZqPwVrLAjkr/view?usp=share_link
 
 Workflow
 
